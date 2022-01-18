@@ -4,7 +4,7 @@
 
   ## Table of Contents
   - [Description](#Description)
-  - [Installations](#Installations)
+  - [Installation](#Installation)
   - [Usage](#Usage)
   - [Tests](#Tests)
   - [License](#License)
