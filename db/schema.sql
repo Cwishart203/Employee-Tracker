@@ -8,7 +8,7 @@ CREATE TABLE department (
   -- MAKE id AS PRIMARY KEY
   -- TODO: YOUR CODE HERE
   id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  name VARCHAR(100) NOT NULL
+  name VARCHAR(30) NOT NULL
 );
 
 CREATE TABLE role (
@@ -19,8 +19,12 @@ CREATE TABLE role (
   -- TODO: YOUR CODE HERE
   id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
   title VARCHAR(30) NOT NULL,
-  salary INT NULL,
-  department_id INT NULL
+  salary DECIMAL NOT NULL,
+  department_id INT NOT NULL,
+  CONSTRAINT fk_department
+  FOREIGN KEY (department_id)
+  REFERENCES department(id)
+  ON DELETE CASCADE
 );
 
 CREATE TABLE employee (
@@ -32,6 +36,14 @@ CREATE TABLE employee (
 id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
 first_name VARCHAR(30) NOT NULL,
 last_name VARCHAR(30) NOT NULL,
-role_id INT NULL,
-manager_id INT NULL
+role_id INT,
+manager_id INT,
+CONSTRAINT fk_role
+FOREIGN KEY (role_id)
+REFERENCES employee(id)
+ON DELETE CASCADE,
+CONSTRAINT fk_manager
+FOREIGN KEY (manager_id)
+REFERENCES employee(id)
+ON DELETE SET NULL
 );
