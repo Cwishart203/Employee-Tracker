@@ -1,4 +1,4 @@
-# Team Profile Generator
+# Employee-Tracker
 
   [![License Badge]()]()
 
@@ -9,6 +9,7 @@
   - [Tests](#Tests)
   - [License](#License)
   - [Questions](#Questions)
+  - [Contributors](#Contributors)
 
   ## Description
   This project allows you to view and update a company database, including viewing and adding employees, viewing and adding managers, viewing and adding departments, switching employee roles, and more, using MySQL.
@@ -19,8 +20,11 @@
   ## Usage
   Open in terminal, then type "npm start"
 
+  ## Demonstration
+  https://drive.google.com/file/d/1awhiik5TxYAisK638GDzF6Amdm-tgxT3/view
+
   ## Tests
-  undefined
+  N/A
 
   ## License
   [![License Badge]()]()
@@ -30,5 +34,5 @@
   ## Questions
   You can contact me for questions at my [email](mailto:cwishart203@gmail.com), or you can go to my [GitHub](https://github.com/cwishart203).
 
-  ## Addtional Contributors
+  ## Contributors
   N/A
